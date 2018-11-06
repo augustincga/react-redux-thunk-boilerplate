@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 
-import Posts from './components/Posts/Posts';
-import PostForm from './components/PostForm/PostForm';
+import Posts from './components/Posts/Posts.jsx';
+import PostForm from './components/PostForm/PostForm.jsx';
 
 import store from './store';
 
