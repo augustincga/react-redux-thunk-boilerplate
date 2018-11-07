@@ -1,10 +1,13 @@
-import { FETCH_POSTS, NEW_POST } from '../types';
+const FETCH_POSTS = 'FETCH_POSTS';
+const NEW_POST = 'NEW_POST';
 
 const initialState = {
   items: [],
   item: {}
 };
 
+
+//Reducer
 export const postReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_POSTS:
@@ -22,6 +25,8 @@ export const postReducer = (state = initialState, action) => {
   }
 }
 
+
+//Actions
 export const fetchPosts = () => dispatch => {
   fetch('https://jsonplaceholder.typicode.com/posts')
     .then(res => res.json())
